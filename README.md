@@ -64,10 +64,6 @@ Here's an excerpt showing an example of one such episode from the list:
 
 - You MUST NOT edit the static episode data. If you find that the data is unsuitable (e.g. fields are missing, or have unwanted characters), you should improve your own code so that _it_ can deal with such issues at run-time. If your app is later extended to allow the downloading of episode data for any one of hundreds of possible shows, frequently updated, tidying the data by hand will NOT be a feasible solution!
 
-Here's an example screenshot to give you a rough idea, but note that the project text below takes precedence over any details from the image. Also, you are free to lay out and style your project as you see fit.
-
-![example screenshot of simple implementation of the 'baby names' project](./example-screenshots/finished.png)
-
 ## Setup
 
 - Create a new React app on your machine called `tv-shows`. Make sure you set up with TypeScript not the JavaScript default. TODO: add link to instructions: "React project creation setup (w typescript)".

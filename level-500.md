@@ -19,6 +19,6 @@ Note: Provided your project meets the above requirements, it can **look** howeve
 
 Here is one example layout.
 
-[example of level 500 showing choice of tv shows](./example-screenshots/example-shows-list-with-search.jpg)
+![example of level 500 showing a search of tv shows by name](./example-screenshots/example-shows-list-with-search.jpg)
 
 [<< level 400](./level-400.md) - [top](./readme.md) - [level 999 >>](./level-999.md)

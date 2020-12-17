@@ -12,6 +12,6 @@ Note: Provided your project meets the above requirements, it can **look** howeve
 
 Here is one example layout.
 
-[level 300 example showing episode selector](./example-screenshots/example-episode-selector.jpg)
+![level 300 example showing episode selector](./example-screenshots/example-episode-selector.jpg)
 
 [<< level 200](./level-200.md) - [top](./readme.md) - [level 350 >>](./level-350.md)

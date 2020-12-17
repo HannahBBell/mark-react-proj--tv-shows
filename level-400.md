@@ -23,9 +23,9 @@ Note: Provided your project meets the above requirements, it can **look** howeve
 
 Here is one example layout.
 
-[example of level 400, showing show selector](./example-screenshots/example-show-selector-1.jpg)
+![example of level 400, showing show selector (collapsed)](./example-screenshots/example-show-selector-1.jpg)
 
-[example of level 400, showing show selector](./example-screenshots/example-show-selector-2.jpg)
+![example of level 400, showing show selector (expanded)](./example-screenshots/example-show-selector-2.jpg)
 
 ### Play nice - a note on using `fetch` during development
 
