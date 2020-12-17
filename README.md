@@ -12,13 +12,57 @@ tags:
   - wip
 ---
 
-# Academy Project: Favourite Places
+# Academy Project: TV Shows
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
 ## Overview
 
-You will make and deploy a single-page React app which will show baby names and let you pick your favourites. The names data is provided for you.
+You must make a React app which shows details of all of the episodes of a TV show.
+
+The episode data will come from [TV Maze](http://www.tvmaze.com/).
+
+## Where do I get the episode data from?
+
+Initially, you will manually save data from their [API](http://www.tvmaze.com/api) to a JSON file in your project source.
+
+In later exercises you may be challenged to have your app dynamically `fetch` the data from the API.
+
+In all cases, you will be working with an array of objects, each of which represents an episode of a TV show.
+
+Here's an excerpt showing an example of one such episode from the list:
+
+```js
+{
+    id: 4952,
+    url:
+      "http://www.tvmaze.com/episodes/4952/game-of-thrones-1x01-winter-is-coming",
+    name: "Winter is Coming",
+    season: 1,
+    number: 1,
+    airdate: "2011-04-17",
+    airtime: "21:00",
+    airstamp: "2011-04-18T01:00:00+00:00",
+    runtime: 60,
+    image: {
+      medium:
+        "http://static.tvmaze.com/uploads/images/medium_landscape/1/2668.jpg",
+      original:
+        "http://static.tvmaze.com/uploads/images/original_untouched/1/2668.jpg"
+    },
+    summary:
+      "<p>Lord Eddard Stark, ruler of the North, is summoned to court by his old friend, King Robert Baratheon, to serve as the King's Hand. Eddard reluctantly agrees after learning of a possible threat to the King's life. Eddard's bastard son Jon Snow must make a painful decision about his own future, while in the distant east Viserys Targaryen plots to reclaim his father's throne, usurped by Robert, by selling his sister in marriage.</p>",
+    _links: {
+      self: {
+        href: "http://api.tvmaze.com/episodes/4952"
+      }
+    }
+  }
+```
+
+## Rules about the episode data
+
+- You MUST NOT edit the static episode data. If you find that the data is unsuitable (e.g. fields are missing, or have unwanted characters), you should improve your own code so that _it_ can deal with such issues at run-time. If your app is later extended to allow the downloading of episode data for any one of hundreds of possible shows, frequently updated, tidying the data by hand will NOT be a feasible solution!
 
 Here's an example screenshot to give you a rough idea, but note that the project text below takes precedence over any details from the image. Also, you are free to lay out and style your project as you see fit.
 
@@ -26,89 +70,31 @@ Here's an example screenshot to give you a rough idea, but note that the project
 
 ## Setup
 
-- Create a new React app on your machine called `baby-names-react`. Make sure you set up with TypeScript not the JavaScript default. TODO: add link to instructions: "React project creation setup (w typescript)".
+- Create a new React app on your machine called `tv-shows`. Make sure you set up with TypeScript not the JavaScript default. TODO: add link to instructions: "React project creation setup (w typescript)".
 
-- Publish the project repo to github. Call it `baby-names-react`. TODO: add link to instructions: "publishing new project repo to github".
+- Publish the project repo to github. Call it `tv-shows`. TODO: add link to instructions: "publishing new project repo to github".
 
-- Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-baby-names`.netlify.app where `yourgithubusername` is your github username. TODO: add link to Netlify deploy instructions.
+- Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-tv-shows`.netlify.app where `yourgithubusername` is your github username. TODO: add link to Netlify deploy instructions.
 
-### Setup - the data:
+### Setup - get the data:
 
-The data is available in the file [./data/babyNamesData.json](./data/babyNamesData.json).
+Download the episode data for the show "Game Of Thrones" from TV Maze API using this URL:
+https://api.tvmaze.com/shows/82/episodes
 
-Copy across this JSON file to your app's `src/` directory, and then import it.
+Save the file as `episodes.json` in your project's `src` directory, and import it into your code.
 
-## Exercise 1
+## Project Levels
 
-- Write a React app which lists baby names from the given file.
+This project is split into various levels.
 
-- It should display boys' and girls' names differently - it's your choice as to how\*
+- [level 100](./level-100.md)
+- [level 200](./level-200.md)
+- [level 300](./level-300.md)
+- [level 350](./level-350.md)
+- [level 400](./level-400.md)
+- [level 500](./level-500.md)
+- [level 999 (further work)](./level-999.md)
 
-- The names should be displayed in ascending alphabetical order.
+## Getting started
 
-- Your project should be on GitHub and Netlify with correct names.
-
-(\*) Feel very free to break from the the "blue-for-boys/pink-for-girls" stereotyping and style it differently.
-
-### Example Screenshot
-
-![Level 1 Example Screenshot](./example-screenshots/level-1.png)
-
-## Exercise 2
-
-- Add a search bar.
-
-- When the user types into it, your app should update the displayed list of baby names to only show matches.
-
-- Matches should be case-insensitive.
-
-- When the search bar is clear, all names should be shown.
-
-### Example Screenshot
-
-![Level 2 Example Screenshot](./example-screenshots/level-2.png)
-
-## Exercise 3
-
-- Add a "favourites" list, displayed separately.
-
-- When the user clicks a name from the main list, it should be moved to a "favourites" list. It should disappear from the main list!
-
-- When the user clicks a name from the _favourites_ list, it should be moved back to the main list. It should disappear from the favourites list!
-
-### Example Screenshot
-
-![Level 3 Example Screenshot](./example-screenshots/level-3.png)
-
-## Exercise 4
-
-Add "name gender" filter buttons.
-
-These buttons should allow the user to see only boy names, girl names, or all names.
-
-The buttons should operate as "radio" buttons - exactly one should be active at any time.
-
-The app should start by showing all names.
-
-It should be clear which filter (if any) is in effect at any time.
-
-_How it works with search:_
-
-If there is also a search term in effect, your app should apply the gender filter to those search results.
-
-### Example Screenshot
-
-![Level 4 Example Screenshot](./example-screenshots/level-4.png)
-
-# Ideas for more work
-
-- Find a way to persist the user's favourites even after the browser tab is closed
-- Add the ability for the user to shuffle the list of names
-- Find an attractive way to differentiate names by gender that doesn't use blue/pink stereotypes.
-- Add some suitably-themed sound effects for the UI.
-  - Josh W Comeau's [useSound hook](https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/) can help here,
-  - as can [freesound.org](https://freesound.org/)
-
-## Credits
-
-The core app idea for this challenge, and its default look, were taken from [Simon Vrachliotis'](https://simonswiss.com/) app, found via [react.rocks](https://react.rocks/example/Baby_name_inspiration).
+Follow the instructions in [getting-started.md](./getting-started.md)
