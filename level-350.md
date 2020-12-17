@@ -1,17 +1,17 @@
-## Switch to fetching _live_ data!
+# Level 350 - Switch to fetching _live_ data!
 
 (This is a short level to help you transition to using live data.)
 
 **Pre-req**: For this level you will have to have learned to use fetch() to `GET` JSON content from an API.
 
-### Requirements
+## Requirements
 
 1. Complete all requirements from level 300
 1. When your page loads, it must load the episodes (for the SAME show) from TVMaze API, using `fetch`, NOT from the provided `getAllEpisodes` function. (See below for the API "endpoint" (URL) to fetch.)
 1. Your search and episode selector must continue to work as specified in level 300.
 1. Your page MUST NOT re-fetch the episodes every time the user types a character into your search field!
 
-### Note on fetching the list of episodes
+## Note on fetching the list of episodes
 
 To get the episodes for the Game of Thrones TV show, you would make a GET request for this URL: https://api.tvmaze.com/shows/82/episodes, using fetch.
 
@@ -23,11 +23,11 @@ To get the episodes for the Game of Thrones TV show, you would make a GET reques
 
 - Now you are seeing where we originally obtained the data from!
 
-### Learn about the API from its documentation
+## Learn about the API from its documentation
 
 You can see that this endpoint has been documented here: https://www.tvmaze.com/api#show-episode-list
 
-### Loading a different show - just for fun
+## Loading a different show - just for fun
 
 From the documentation above you can see that the show id is mentioned in the URL.
 

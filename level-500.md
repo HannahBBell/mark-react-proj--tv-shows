@@ -1,4 +1,4 @@
-## Add a shows list and search
+# Level 500 - Add a shows list and search
 
 1. Complete all requirements from level 400
 1. When your app starts, present a listing of all shows ("shows listing")
@@ -13,7 +13,7 @@
 
 Continue to get the list of shows the same way you did in level 400. (You do not need to fetch it.)
 
-### Example screenshots of Shows Listing
+## Example screenshots of Shows Listing
 
 Note: Provided your project meets the above requirements, it can **look** however you want.
 

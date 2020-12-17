@@ -1,4 +1,4 @@
-## Add Search
+# Level 200 - Add Search
 
 1. Complete all requirements from Level 100
 1. Add a "live" search input:
@@ -8,9 +8,7 @@
    1. Display how many episodes match the current search
    1. If the search box is cleared, **all** episodes should be shown.
 
-If you have been fetching the episode data from the API, be careful not to cause many frequent requests with this search feature. The search should look through an _in-memory_ copy of the episode list. **Do not** fetch the data again every time something is typed!
-
-### Example screenshot of search
+## Example screenshot of search
 
 Note: Provided your project meets the above requirements, it can **look** however you want.
 

@@ -1,4 +1,4 @@
-## Add a Show Selector
+# Level 400 - Add a Show Selector
 
 **Pre-req**: For this level you will have to have learned to use fetch() to `GET` JSON content from an API.
 
@@ -9,7 +9,7 @@
    1. Ensure that your search and episode selector controls still work correctly when you switch shows.
    1. This show select must list shows in alphabetical order, case-insensitive.
 
-### Note on fetching episode lists
+## Note on fetching episode lists
 
 Once the user selects a show you should `fetch` the episodes list using URLs of the following pattern:
 
@@ -17,7 +17,7 @@ Once the user selects a show you should `fetch` the episodes list using URLs of 
 
 For example, `https://api.tvmaze.com/shows/82/episodes` will return the episodes for show `82` ("Game of Thrones").
 
-### Example screenshots of Show Selector
+## Example screenshots of Show Selector
 
 Note: Provided your project meets the above requirements, it can **look** however you want.
 
@@ -27,7 +27,7 @@ Here is one example layout.
 
 ![example of level 400, showing show selector (expanded)](./example-screenshots/example-show-selector-2.jpg)
 
-### Play nice - a note on using `fetch` during development
+## Play nice - a note on using `fetch` during development
 
 Be _careful_ when developing with fetch. By default, every time you make a small change to your app it will be restarted by live server - if you are fetching JSON on page load, the JSON will be downloaded again and again. These frequent HTTP requests may lead to the API permanently banning your IP address from further requests, or "throttling" it for some time. Worse, if they don't, they may cause performance issues for the API service we are using.
 

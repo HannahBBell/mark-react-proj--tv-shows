@@ -22,7 +22,9 @@ You must make a React app which shows details of all of the episodes of a TV sho
 
 The episode data will come from [TV Maze](http://www.tvmaze.com/).
 
-## Where do I get the episode data from?
+## About the episode data
+
+### Where do I get the episode data from?
 
 Initially, you will manually save data from their [API](http://www.tvmaze.com/api) to a JSON file in your project source.
 
@@ -30,7 +32,9 @@ In later exercises you may be challenged to have your app dynamically `fetch` th
 
 In all cases, you will be working with an array of objects, each of which represents an episode of a TV show.
 
-Here's an excerpt showing an example of one such episode from the list:
+### What does it look like?
+
+Here's an excerpt of [this file](https://api.tvmaze.com/shows/82/episodes) showing an example of one such episode from the list.
 
 ```js
 {
@@ -60,9 +64,11 @@ Here's an excerpt showing an example of one such episode from the list:
   }
 ```
 
-## Rules about the episode data
+### Rules about the episode data
 
-- You MUST NOT edit the static episode data. If you find that the data is unsuitable (e.g. fields are missing, or have unwanted characters), you should improve your own code so that _it_ can deal with such issues at run-time. If your app is later extended to allow the downloading of episode data for any one of hundreds of possible shows, frequently updated, tidying the data by hand will NOT be a feasible solution!
+You MUST NOT edit the static episode data. If you find that the data is unsuitable (e.g. fields are missing, or have unwanted characters), you should improve your own code so that _it_ can deal with such issues at run-time.
+
+Why? If your app is later extended to allow the downloading of episode data for any one of hundreds of possible shows, frequently updated, tidying the data by hand will NOT be a feasible solution!
 
 ## Setup
 
@@ -72,16 +78,18 @@ Here's an excerpt showing an example of one such episode from the list:
 
 - Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-tv-shows`.netlify.app where `yourgithubusername` is your github username. TODO: add link to Netlify deploy instructions.
 
-### Setup - get the data:
+### Setup - get the episode data:
 
-Download the episode data for the show "Game Of Thrones" from TV Maze API using this URL:
-https://api.tvmaze.com/shows/82/episodes
+- Download the episode data for the show "Game Of Thrones" from TV Maze API using this URL:
+  https://api.tvmaze.com/shows/82/episodes
 
-Save the file as `episodes.json` in your project's `src` directory, and import it into your code.
+- Save the file as `episodes.json` in your project's `src` directory, and import it into your code.
+
+- If your JSON data is all on one long line, open it in your text editor and simply save. It will format (or "pretty-print") it for easier reading.
 
 ## Project Levels
 
-This project is split into various levels.
+This project is broken into various levels:
 
 - [level 100](./level-100.md)
 - [level 200](./level-200.md)

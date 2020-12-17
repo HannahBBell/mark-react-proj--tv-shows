@@ -1,4 +1,4 @@
-## Minimal features
+# Minimal features for level 100
 
 1. All episodes must be shown
 1. For each episode, AT LEAST the following must be displayed:
@@ -13,7 +13,7 @@
 1. The summary text of some episodes has HTML tags in it. Your app should remove these before displaying the text.
 1. The page should state somewhere that the data has been obtained from [TVMaze.com](https://tvmaze.com/), and should link back to that site (or the specific episode on that site). See [tvmaze.com/api#licensing](https://www.tvmaze.com/api#licensing).
 
-### Screenshot of minimal version
+## Screenshot of minimal version
 
 Note: Provided your project meets the above requirements, it can **look** however you want.
 
