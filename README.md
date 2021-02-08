@@ -9,7 +9,7 @@ methods:
   - solo
 
 tags:
-  - wip
+  - react
 ---
 
 # Academy Project: TV Shows
@@ -72,11 +72,11 @@ Why? If your app is later extended to allow the downloading of episode data for 
 
 ## Setup
 
-- Create a new React app on your machine called `tv-shows`. Make sure you set up with TypeScript not the JavaScript default. TODO: add link to instructions: "React project creation setup (w typescript)".
+- Create a new React app on your machine called `tv-shows`. Make sure you set up with TypeScript not the JavaScript default.  [Guide to React project creation setup (with TypeScript)](https://www.notion.so/weareacademy/How-to-create-a-React-app-with-TypeScript-76643f84db564a69a04db9a0b6a2f2e7)
 
-- Publish the project repo to github. Call it `tv-shows`. TODO: add link to instructions: "publishing new project repo to github".
+- Publish the project repo on your github account.
 
-- Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-tv-shows`.netlify.app where `yourgithubusername` is your github username. TODO: add link to Netlify deploy instructions.
+- Set up continuous deployment of your app to [Netlify](https://netlify.app/) as `academy-yourgithubusername-tv-shows`.netlify.app.  [Netlify deployment guide for React apps](https://www.notion.so/weareacademy/How-to-deploy-a-React-app-to-free-Netlify-hosting-9e6ebd4dcb814cb483c34eb0f05ea96e)
 
 ### Setup - get the episode data:
 
