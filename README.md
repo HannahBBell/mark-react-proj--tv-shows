@@ -98,7 +98,3 @@ This project is broken into various levels:
 - [level 400](./level-400.md)
 - [level 500](./level-500.md)
 - [level 999 (further work)](./level-999.md)
-
-## Getting started
-
-Follow the instructions in [getting-started.md](./getting-started.md)
