@@ -1,5 +1,7 @@
 # Level 350 - Switch to fetching _live_ data!
 
+Check in with faculty before continuing to this level.
+
 (This is a short level to help you transition to using live data.)
 
 **Pre-req**: For this level you will need to use `fetch` (or `axios`) to `GET` JSON content from an API.
