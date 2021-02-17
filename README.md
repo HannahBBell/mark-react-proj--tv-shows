@@ -87,7 +87,30 @@ Why? If your app is later extended to allow the downloading of episode data for 
 
 - Edit your project's `tsconfig.json` add the following property to compilerOptions: `"resolveJsonModule": true`
 
-- If your JSON data is all on one long line, open it in your text editor and simply save. It will format (or "pretty-print") it for easier reading.
+- If your JSON data is all on one long line, you can run the editor command `format document` to make it more readable.   (e.g. from the vscode command palette).
+
+- Use the following type when passing around an episode.  Note: It includes some intentional imperfections which you may need to address later in the exercise.
+
+```
+interface IEpisode {
+  id: number;
+  url: string;
+  name: string;
+  season: number;
+  number: number;
+  type: string;
+  airdate: string;
+  airtime: string;
+  airstamp: string;
+  runtime: number;
+  image: {
+    medium: string;
+    original: string;
+  };
+  summary: string;
+  _links: { self: { href: string } };
+}
+```
 
 ## Project Levels
 
