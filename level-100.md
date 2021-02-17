@@ -10,8 +10,10 @@
 1. Season number and episode number should be displayed as an **episode code**:
    1. Each part should be zero-padded to two digits.
    1. Example: `S02E07` would be the code for the 7th episode of the 2nd season. `S2E7` would be _incorrect_.
-1. The summary text of some episodes has HTML tags in it. Start by displaying the summary including these as part of the string. We will strip them out of the string in a later level, but optionally you can do this now.
 1. The page should state somewhere that the data has been obtained from [TVMaze.com](https://tvmaze.com/), and should link back to that site (or the specific episode on that site). See [tvmaze.com/api#licensing](https://www.tvmaze.com/api#licensing).
+
+### Optional features at this point
+* The summary text of some episodes contains what seem to be HTML tags (e.g. `<p>`).  Try to omit these tags when displaying the summary text.
 
 ## Screenshot of minimal version
 
