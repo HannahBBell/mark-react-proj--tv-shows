@@ -85,6 +85,8 @@ Why? If your app is later extended to allow the downloading of episode data for 
 
 - Save the file as `episodes.json` in your project's `src` directory, and import it into your code.
 
+- Edit your project's `tsconfig.json` add the following property to compilerOptions: `"resolveJsonModule": true`
+
 - If your JSON data is all on one long line, open it in your text editor and simply save. It will format (or "pretty-print") it for easier reading.
 
 ## Project Levels
